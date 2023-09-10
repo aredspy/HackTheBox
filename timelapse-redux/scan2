@@ -1,0 +1,27 @@
+# Nmap 7.93 scan initiated Wed Feb  1 15:34:28 2023 as: nmap --script vuln -p53,88,135,389,445,464,593,636,5986,9389,49667,49673,49674,49696 -oN scan2 10.129.227.113
+Nmap scan report for 10.129.227.113
+Host is up (0.030s latency).
+
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+5986/tcp  open  wsmans
+9389/tcp  open  adws
+49667/tcp open  unknown
+49673/tcp open  unknown
+49674/tcp open  unknown
+49696/tcp open  unknown
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+# Nmap done at Wed Feb  1 15:35:51 2023 -- 1 IP address (1 host up) scanned in 83.15 seconds

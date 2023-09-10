@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Fri May 27 15:16:59 2022 as: nmap -sN -T4 -oN scan2 10.129.67.251
+Nmap scan report for 10.129.67.251
+Host is up (0.029s latency).
+All 1000 scanned ports on 10.129.67.251 are closed
+
+# Nmap done at Fri May 27 15:16:59 2022 -- 1 IP address (1 host up) scanned in 0.73 seconds

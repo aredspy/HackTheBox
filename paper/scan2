@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Tue Jun  7 10:54:13 2022 as: nmap --script vuln -p22,80,443 -oN scan2 10.10.11.143
+Nmap scan report for 10.10.11.143
+Host is up (0.026s latency).
+
+PORT    STATE SERVICE
+22/tcp  open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp  open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /manual/: Potentially interesting folder
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+443/tcp open  https
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /manual/: Potentially interesting folder
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+|_sslv2-drown: 
+
+# Nmap done at Tue Jun  7 10:54:46 2022 -- 1 IP address (1 host up) scanned in 33.01 seconds

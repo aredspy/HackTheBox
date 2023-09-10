@@ -1,0 +1,7 @@
+total 24K
+drwxr-xr-x 2 developer developer 4.0K May 21 20:37 .
+drwxr-xr-x 3 root      root      4.0K May 20 21:28 ..
+-rw-r--r-- 1 developer developer  220 May 20 21:28 .bash_logout
+-rw-r--r-- 1 developer developer 3.5K May 20 21:28 .bashrc
+-rw-r--r-- 1 developer developer  675 May 20 21:28 .profile
+-rw-r--r-- 1 developer developer 1.6K May 21 20:37 pwdb.kdbx

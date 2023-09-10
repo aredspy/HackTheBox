@@ -1,0 +1,152 @@
+# Nmap 7.93 scan initiated Thu Feb  2 13:28:27 2023 as: nmap -A -p- -T4 -oN scan1 10.129.227.78
+Nmap scan report for 10.129.227.78
+Host is up (0.030s latency).
+Not shown: 65510 closed tcp ports (reset)
+PORT      STATE SERVICE      VERSION
+53/tcp    open  domain       Simple DNS Plus
+80/tcp    open  http
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Cache-Control: private
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Set-Cookie: JSESSIONIDADSSP=90DA6B179DD0FE3204146F173EB935C8; Path=/; HttpOnly
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 259
+|     Date: Fri, 03 Feb 2023 03:39:57 GMT
+|     Connection: close
+|     <!-- $Id$ -->
+|     <html>
+|     <head>
+|     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+|     <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+|     <META HTTP-EQUIV="Expires" CONTENT="0">
+|     <script>
+|     location.href = 'showLogin.cc' + location.search;
+|     </script>
+|     </head>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Cache-Control: private
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Content-Length: 0
+|     Date: Fri, 03 Feb 2023 03:39:57 GMT
+|     Connection: close
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html;charset=utf-8
+|     Content-Language: en
+|     Content-Length: 1897
+|     Date: Fri, 03 Feb 2023 03:39:57 GMT
+|     Connection: close
+|     <!doctype html><html lang="en"><head><title>HTTP Status 400 
+|     Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 
+|_    Request</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Invalid character found in the HTTP protocol [RTSP&#47;1.00x0d0x0a0x0d...]</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, i
+|_http-title: Site doesn't have a title (text/html;charset=UTF-8).
+88/tcp    open  kerberos-sec Microsoft Windows Kerberos (server time: 2023-02-03 03:39:57Z)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp   open  ldap         Microsoft Windows Active Directory LDAP (Domain: panda.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds Windows Server 2016 Standard 14393 microsoft-ds (workgroup: PANDA)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: panda.htb, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+5985/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf       .NET Message Framing
+47001/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        Microsoft Windows RPC
+49665/tcp open  msrpc        Microsoft Windows RPC
+49666/tcp open  msrpc        Microsoft Windows RPC
+49667/tcp open  msrpc        Microsoft Windows RPC
+49669/tcp open  msrpc        Microsoft Windows RPC
+49670/tcp open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+49671/tcp open  msrpc        Microsoft Windows RPC
+49675/tcp open  msrpc        Microsoft Windows RPC
+49694/tcp open  msrpc        Microsoft Windows RPC
+61586/tcp open  msrpc        Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.93%I=7%D=2/2%Time=63DC118E%P=x86_64-redhat-linux-gnu%r(G
+SF:etRequest,21A,"HTTP/1\.1\x20200\x20OK\r\nCache-Control:\x20private\r\nE
+SF:xpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nSet-Cookie:\
+SF:x20JSESSIONIDADSSP=90DA6B179DD0FE3204146F173EB935C8;\x20Path=/;\x20Http
+SF:Only\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x20
+SF:259\r\nDate:\x20Fri,\x2003\x20Feb\x202023\x2003:39:57\x20GMT\r\nConnect
+SF:ion:\x20close\r\n\r\n<!--\x20\$Id\$\x20-->\n<html>\n<head>\n\t<META\x20
+SF:HTTP-EQUIV=\"CACHE-CONTROL\"\x20CONTENT=\"NO-CACHE\">\n\t<META\x20HTTP-
+SF:EQUIV=\"PRAGMA\"\x20CONTENT=\"NO-CACHE\">\n\t<META\x20HTTP-EQUIV=\"Expi
+SF:res\"\x20CONTENT=\"0\">\n\t<script>\n\t\tlocation\.href\x20=\x20'showLo
+SF:gin\.cc'\x20\+\x20location\.search;\n\t</script>\n</head>\n</html>\n")%
+SF:r(HTTPOptions,AE,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nCache
+SF:-Control:\x20private\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:
+SF:00\x20GMT\r\nContent-Length:\x200\r\nDate:\x20Fri,\x2003\x20Feb\x202023
+SF:\x2003:39:57\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(RTSPRequest,810
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;char
+SF:set=utf-8\r\nContent-Language:\x20en\r\nContent-Length:\x201897\r\nDate
+SF::\x20Fri,\x2003\x20Feb\x202023\x2003:39:57\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n<!doctype\x20html><html\x20lang=\"en\"><head><title>HTTP\x20S
+SF:tatus\x20400\x20\xe2\x80\x93\x20Bad\x20Request</title><style\x20type=\"
+SF:text/css\">body\x20{font-family:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,
+SF:\x20h3,\x20b\x20{color:white;background-color:#525D76;}\x20h1\x20{font-
+SF:size:22px;}\x20h2\x20{font-size:16px;}\x20h3\x20{font-size:14px;}\x20p\
+SF:x20{font-size:12px;}\x20a\x20{color:black;}\x20\.line\x20{height:1px;ba
+SF:ckground-color:#525D76;border:none;}</style></head><body><h1>HTTP\x20St
+SF:atus\x20400\x20\xe2\x80\x93\x20Bad\x20Request</h1><hr\x20class=\"line\"
+SF:\x20/><p><b>Type</b>\x20Exception\x20Report</p><p><b>Message</b>\x20Inv
+SF:alid\x20character\x20found\x20in\x20the\x20HTTP\x20protocol\x20\[RTSP&#
+SF:47;1\.00x0d0x0a0x0d\.\.\.\]</p><p><b>Description</b>\x20The\x20server\x
+SF:20cannot\x20or\x20will\x20not\x20process\x20the\x20request\x20due\x20to
+SF:\x20something\x20that\x20is\x20perceived\x20to\x20be\x20a\x20client\x20
+SF:error\x20\(e\.g\.,\x20malformed\x20request\x20syntax,\x20i");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=2/2%OT=53%CT=1%CU=31746%PV=Y%DS=2%DC=T%G=Y%TM=63DC11E0
+OS:%P=x86_64-redhat-linux-gnu)SEQ(SP=103%GCD=1%ISR=10D%TI=I%CI=I%II=I%SS=S%
+OS:TS=A)OPS(O1=M539NW8ST11%O2=M539NW8ST11%O3=M539NW8NNT11%O4=M539NW8ST11%O5
+OS:=M539NW8ST11%O6=M539ST11)WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=
+OS:2000)ECN(R=Y%DF=Y%T=80%W=2000%O=M539NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%
+OS:A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF
+OS:=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%
+OS:RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W
+OS:=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+OS:U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%D
+OS:FI=N%T=80%CD=Z)
+
+Network Distance: 2 hops
+Service Info: Host: ADSELFSERVICE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: ADSELFSERVICE
+|   NetBIOS computer name: ADSELFSERVICE\x00
+|   Domain name: panda.htb
+|   Forest name: panda.htb
+|   FQDN: ADSELFSERVICE.panda.htb
+|_  System time: 2023-02-02T19:41:12-08:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-time: 
+|   date: 2023-02-03T03:41:11
+|_  start_date: 2023-02-03T03:26:39
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 10h40m00s, deviation: 4h37m09s, median: 7h59m59s
+
+TRACEROUTE (using port 995/tcp)
+HOP RTT      ADDRESS
+1   30.48 ms 10.10.14.1
+2   30.53 ms 10.129.227.78
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  2 13:41:20 2023 -- 1 IP address (1 host up) scanned in 772.66 seconds

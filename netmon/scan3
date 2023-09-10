@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Fri Jun  3 10:48:03 2022 as: nmap -sV -sC -p80 -oN scan3 -Pn 10.10.10.152
+Nmap scan report for 10.10.10.152
+Host is up (0.027s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Indy httpd 18.1.37.13946 (Paessler PRTG bandwidth monitor)
+|_http-server-header: PRTG/18.1.37.13946
+| http-title: Welcome | PRTG Network Monitor (NETMON)
+|_Requested resource was /index.htm
+|_http-trane-info: Problem with XML parsing of /evox/about
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun  3 10:48:10 2022 -- 1 IP address (1 host up) scanned in 7.55 seconds

@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Wed Jun  1 12:16:43 2022 as: nmap -A -sS -oN scan6 -Pn 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up.
+All 1000 scanned ports on 10.10.10.3 are filtered
+Too many fingerprints match this host to give specific OS details
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   27.96 ms 10.10.14.1
+2   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun  1 12:20:23 2022 -- 1 IP address (1 host up) scanned in 220.44 seconds

@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Wed Jun  8 13:26:45 2022 as: nmap --script vuln -p53,88,389,445,464,3268 -oN scan2 10.10.11.152
+Nmap scan report for 10.10.11.152
+Host is up (0.58s latency).
+
+PORT     STATE SERVICE
+53/tcp   open  domain
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+88/tcp   open  kerberos-sec
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+389/tcp  open  ldap
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+445/tcp  open  microsoft-ds
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+464/tcp  open  kpasswd5
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+3268/tcp open  globalcatLDAP
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+# Nmap done at Wed Jun  8 13:27:26 2022 -- 1 IP address (1 host up) scanned in 40.85 seconds

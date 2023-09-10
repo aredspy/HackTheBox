@@ -1,0 +1,29 @@
+{
+    "server": [
+        {
+            "address": "dc1.example.com",
+            "port": 389,
+            "ssl": false
+        },
+        {
+            "address": "dc2.example.com",
+            "port": 389,
+            "ssl": false
+        },
+        {
+            "address": "dc3.example.com",
+            "port": 389,
+            "ssl": false
+        }
+    ],
+    "domain": "example.com",
+    "cred-cache-file": "/tmp/laps.temp",
+    "client-keytab-file": "/etc/krb5.keytab",
+    "ldap-attribute-password": "ms-MCS-AdmPwd",
+    "ldap-attribute-password-expiry": "ms-MCS-AdmPwdExpirationTime",
+    "hostname": null,
+    "password-change-user": "root",
+    "password-days-valid": 30,
+    "password-length": 15,
+    "password-alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+}

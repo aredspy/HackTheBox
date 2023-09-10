@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Fri May 27 12:47:23 2022 as: nmap -A -sN -T4 -oN scan1 10.129.1.12
+Nmap scan report for 10.129.1.12
+Host is up (0.029s latency).
+All 1000 scanned ports on 10.129.1.12 are closed
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   30.03 ms 10.10.14.1
+2   30.12 ms 10.129.1.12
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 27 12:47:25 2022 -- 1 IP address (1 host up) scanned in 2.81 seconds

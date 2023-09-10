@@ -1,0 +1,13 @@
+# Nmap 7.93 scan initiated Wed Feb  8 17:21:55 2023 as: nmap --script vuln -p21,22,80 -oN scan2 10.129.96.20
+Nmap scan report for 10.129.96.20
+Host is up (0.030s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+# Nmap done at Wed Feb  8 17:22:44 2023 -- 1 IP address (1 host up) scanned in 48.69 seconds

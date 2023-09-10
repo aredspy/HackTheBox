@@ -1,0 +1,35 @@
+# Nmap 7.93 scan initiated Tue Feb 14 20:58:47 2023 as: nmap --script vuln -p80,135,139,443,445,3306,5040,5985,7680,49668 -oN scan2 10.129.96.22
+Pre-scan script results:
+|_broadcast-avahi-dos: ERROR: Script execution failed (use -d to debug)
+Nmap scan report for 10.129.96.22
+Host is up (0.031s latency).
+
+PORT      STATE  SERVICE
+80/tcp    open   http
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp   open   msrpc
+139/tcp   open   netbios-ssn
+443/tcp   open   https
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+445/tcp   open   microsoft-ds
+3306/tcp  open   mysql
+5040/tcp  open   unknown
+5985/tcp  open   wsman
+7680/tcp  closed pando-pub
+49668/tcp open   unknown
+
+Host script results:
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+# Nmap done at Tue Feb 14 21:04:32 2023 -- 1 IP address (1 host up) scanned in 345.15 seconds

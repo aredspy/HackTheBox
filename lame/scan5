@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Wed Jun  1 12:14:06 2022 as: nmap -sT -T5 -oN scan5 -Pn 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up.
+All 1000 scanned ports on 10.10.10.3 are filtered
+
+# Nmap done at Wed Jun  1 12:14:57 2022 -- 1 IP address (1 host up) scanned in 51.08 seconds

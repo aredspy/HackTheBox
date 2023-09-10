@@ -1,0 +1,3 @@
+/index.php            (Status: 200) [Size: 38]
+/index                (Status: 200) [Size: 38]
+/dev                  (Status: 301) [Size: 310] [--> https://10.10.10.79/dev/]

@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Tue May 31 08:46:28 2022 as: nmap -A -T4 -p0-9999 -oN scan1 10.129.70.117
+Nmap scan report for 10.129.70.117
+Host is up (0.048s latency).
+Not shown: 9998 filtered ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Apache httpd 2.4.52 ((Win64) OpenSSL/1.1.1m PHP/8.1.1)
+|_http-server-header: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+7680/tcp open  pando-pub?
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May 31 08:47:37 2022 -- 1 IP address (1 host up) scanned in 69.56 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.93 scan initiated Wed Jan 25 16:51:55 2023 as: nmap -T4 -p- -oN scan4 10.129.227.116
+Nmap scan report for academy.htb (10.129.227.116)
+Host is up (0.031s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+33060/tcp open  mysqlx
+
+# Nmap done at Wed Jan 25 16:52:14 2023 -- 1 IP address (1 host up) scanned in 19.13 seconds

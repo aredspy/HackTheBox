@@ -1,0 +1,21 @@
+# Nmap 7.93 scan initiated Wed Jan 25 15:26:26 2023 as: nmap --script vuln -p22,80 -oN scan2 10.129.227.116
+Nmap scan report for academy.htb (10.129.227.116)
+Host is up (0.034s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-fileupload-exploiter: 
+|   
+|     Couldn't find a file-type field.
+|   
+|_    Couldn't find a file-type field.
+| http-enum: 
+|   /admin.php: Possible admin folder
+|_  /login.php: Possible admin folder
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Wed Jan 25 15:26:58 2023 -- 1 IP address (1 host up) scanned in 32.06 seconds

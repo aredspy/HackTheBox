@@ -1,0 +1,47 @@
+# Nmap 7.80 scan initiated Fri Jun  3 10:25:45 2022 as: nmap -A -T4 -p- -oN scan1 -Pn 10.10.10.152
+Nmap scan report for 10.10.10.152
+Host is up (0.047s latency).
+Not shown: 65524 closed ports
+PORT      STATE SERVICE      VERSION
+21/tcp    open  ftp          Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 02-03-19  12:18AM                 1024 .rnd
+| 02-25-19  10:15PM       <DIR>          inetpub
+| 07-16-16  09:18AM       <DIR>          PerfLogs
+| 02-25-19  10:56PM       <DIR>          Program Files
+| 02-03-19  12:28AM       <DIR>          Program Files (x86)
+| 02-03-19  08:08AM       <DIR>          Users
+|_02-25-19  11:49PM       <DIR>          Windows
+| ftp-syst: 
+|_  SYST: Windows_NT
+135/tcp   open  msrpc        Microsoft Windows RPC
+445/tcp   open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+5985/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+47001/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        Microsoft Windows RPC
+49665/tcp open  msrpc        Microsoft Windows RPC
+49666/tcp open  msrpc        Microsoft Windows RPC
+49667/tcp open  msrpc        Microsoft Windows RPC
+49668/tcp open  msrpc        Microsoft Windows RPC
+49669/tcp open  msrpc        Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2022-06-03T15:32:28
+|_  start_date: 2022-06-03T15:25:11
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun  3 10:32:35 2022 -- 1 IP address (1 host up) scanned in 409.81 seconds

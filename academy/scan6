@@ -1,0 +1,21 @@
+# Nmap 7.93 scan initiated Wed Jan 25 16:53:28 2023 as: nmap -A -p33060 -oN scan6 10.129.227.116
+Nmap scan report for academy.htb (10.129.227.116)
+Host is up (0.027s latency).
+
+PORT      STATE SERVICE VERSION
+33060/tcp open  mysqlx?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port33060-TCP:V=7.93%I=7%D=1/25%Time=63D1B2F4%P=x86_64-redhat-linux-gnu
+SF:%r(GenericLines,9,"\x05\0\0\0\x0b\x08\x05\x1a\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.6 (95%), Linux 5.3 - 5.4 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 2.6.32 (94%), Linux 5.0 - 5.3 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Adtran 424RG FTTH gateway (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   27.68 ms 10.10.14.1
+2   27.73 ms academy.htb (10.129.227.116)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 25 16:56:29 2023 -- 1 IP address (1 host up) scanned in 180.81 seconds

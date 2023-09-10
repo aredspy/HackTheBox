@@ -1,0 +1,8 @@
+/*checkout*.aspx      (Status: 400) [Size: 11]
+/*docroot*.aspx       (Status: 400) [Size: 11]
+/*.aspx               (Status: 400) [Size: 11]
+/http%3A%2F%2Fwww.aspx (Status: 400) [Size: 11]
+/http%3A.aspx         (Status: 400) [Size: 11]
+/q%26a.aspx           (Status: 400) [Size: 11]
+/**http%3a.aspx       (Status: 400) [Size: 11]
+/*http%3A.aspx        (Status: 400) [Size: 11]
